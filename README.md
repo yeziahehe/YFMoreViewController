@@ -1,4 +1,6 @@
-# YFMoreViewController - Easy More Operation ViewController
+# YFMoreViewController
+
+![YFMoreViewController](YFMoreViewController.png)
 
 <p>
 <a href="http://cocoadocs.org/docsets/YFStartView"><img src="https://img.shields.io/cocoapods/v/YFStartView.svg?style=flat"></a>
@@ -8,7 +10,7 @@
 <a href="https://developer.apple.com/ios"><img src="https://img.shields.io/badge/platform-iOS%2010+-lightgray.svg"></a>
 </p>
 
-![YFMoreViewController](YFMoreViewController.png)
+Easy More Operation ViewController in swift.
 
 # Introduction
 
