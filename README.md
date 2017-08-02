@@ -40,7 +40,7 @@ pod 'YFMoreViewController'
 
 ## Preparation
 
-![Note](note.png)
+![Note](Note.png)
 
 YFMoreViewController consists of three parts: info, item important and item normal. They can all be empty, it will just show cancel button.
 
