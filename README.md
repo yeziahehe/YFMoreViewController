@@ -1,6 +1,6 @@
-# YFMoreViewController
-
 ![YFMoreViewController](YFMoreViewController.png)
+
+# YFMoreViewController
 
 <p>
 <a href="http://cocoadocs.org/docsets/YFStartView"><img src="https://img.shields.io/cocoapods/v/YFStartView.svg?style=flat"></a>
