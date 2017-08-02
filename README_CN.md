@@ -10,53 +10,51 @@
 <a href="https://developer.apple.com/ios"><img src="https://img.shields.io/badge/platform-iOS%2010+-lightgray.svg"></a>
 </p>
 
-Easy More Operation ViewController in swift.
+Swift 编写的更多操作 ViewController。
 
-[中文文档](https://github.com/yeziahehe/YFMoreViewController/blob/master/README_CN.md)
+# 介绍
 
-# Introduction
+仿照微信更多操作，用来分享、网页操作等。你可以使用 YFMoreViewController 只进行分享或者操作网页。
 
-More Operation like share and refresh, inspiration comes from Wechat More Operation. You can use YFMoreViewController just to share something, or to oprate webview.
+# 要求
 
-# Requirements
+- iOS 10 及以后 (我没有在 iOS 1O 以下系统 Run，如果你发现问题，请 Open an issue)
+- Xcode 8.x 及以后
+- Swift 3.x 及以后
 
-- iOS 10 and later (I did not run blow iOS 10, if you find some error, open an issue.)
-- Xcode 8.x and later
-- Swift 3.x and later
-
-# Installation
+# 安装
 
 ## CocoaPods
 
-- Simply add this line to your `Podfile`:
+- 添加如下到 `Podfile`:
 ```
 pod 'YFMoreViewController'
 ```
-- Run `pod install`.
-- Include with `import YFMoreViewController` to use it wherever you need.
+- Run `pod install`。
+- 导入 `import YFMoreViewController` 在任何你需要的地方。
 
 ## Manually
 
-- Add sources floder's files `YFMoreItemView`、`YFMoreViewDelegate`、`YFMoreViewController` to your project (3 files total).
-- Include with `import YFMoreViewController` to use it wherever you need.
+- 添加 Sources 文件夹中的三个文件 `YFMoreItemView`、`YFMoreViewDelegate`、`YFMoreViewController` 到项目中。
+- 导入 `import YFMoreViewController` 在任何你需要的地方。
 
-# Usage
+# 用法
 
-## Preparation
+## 基本概念
 
 ![Note](Note.png)
 
-YFMoreViewController consists of three parts: info, item important and item normal. They can all be empty, it will just show cancel button.
+YFMoreViewController 由三个部分组成：info, item important 和 item normal。这三个部分可以都为空，那么只剩下取消按钮，显然是不美观实用。
 
-- info: if you use YFMoreViewController in WebView, here you can show "Powered By website"
+- info: 如果你在 WebView 中使用 YFMoreViewController，你可以在这里显示“此网页由 xxx 提供”。
 
-- item important: here always show share platform, just like Wechat etc. If you just use item important, YFMoreViewController may replace your share ViewController
+- item important: 主要展示第三方分享平台，类似于微信、朋友圈等。你可以只使用 item important 这一部分，可以替代你的分享页面。
 
-- item normal: here always show normal operation, you can use with WebView or some other you need
+- item normal: 主要展示基础操作，可以配合 WebView 使用或者你其他需要使用的场景。
 
-## Basic Usage
+## 基本用法
 
-You just init YFMoreViewController, then add items and show, it will OK.
+初始化 YFMoreViewController, 然后添加 items 并展示。
 ```
 let moreViewController = YFMoreViewController.init()
 moreViewController.delegate = self
@@ -68,7 +66,7 @@ moreViewController.addItems(title: "Open With Safari", image: UIImage(named: "sa
 moreViewController.showFromBottom()
 ```
 
-Then you need implement protocol.
+接下来实现协议方法。
 ```
 func moreView(_ moreview: YFMoreViewController, didSelectItemAt tag: String, type: YFMoreItemType) {
   switch tag {
@@ -82,10 +80,10 @@ func moreView(_ moreview: YFMoreViewController, didSelectItemAt tag: String, typ
 }
 ```
 
-# About
+# 关于
 
-- [Blog](http://yeziahehe.com/)
-- Gmail: yeziahehe@gmail.com
+- [博客](http://yeziahehe.com/)
+- 邮箱: yeziahehe@gmail.com
 
 # License
 
