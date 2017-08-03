@@ -15,7 +15,7 @@ public protocol YFMoreViewDelegate: class {
     func moreView(_ moreview: YFMoreViewController, didSelectItemAt tag: String, type: YFMoreItemType)
 }
 
-extension YFMoreViewDelegate {
+public extension YFMoreViewDelegate {
     func moreview(_ moreview: YFMoreViewController, didSelectItemAt index: Int, type: YFMoreItemType) {
         
     }
