@@ -19,7 +19,7 @@ public class YFMoreViewController: UIViewController {
     
     var importantItems: [YFMoreItemView] = []
     var normalItems: [YFMoreItemView] = []
-    weak var delegate: YFMoreViewDelegate?
+    public weak var delegate: YFMoreViewDelegate?
     
     var previousKeyWindow: UIWindow?
     var containerWindow: UIWindow?
