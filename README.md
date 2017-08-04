@@ -4,7 +4,7 @@
 
 <p>
 <a href="http://cocoadocs.org/docsets/YFMoreViewController"><img src="https://img.shields.io/cocoapods/v/YFMoreViewController.svg?style=flat"></a>
-<a href="https://github.com/yeziahehe/YFMoreViewController/blob/master/LICENSE"><img src="https://img.shields.io/badge/language-MIT-blue.svg"></a>
+<a href="https://github.com/yeziahehe/YFMoreViewController/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
 <a href="http://swift.org"><img src="https://img.shields.io/badge/language-swift%203.0-orange.svg"></a>
 <a href="https://developer.apple.com/xcode/"><img src="https://img.shields.io/badge/xcode-8.0-46aae6.svg"></a>
 <a href="https://developer.apple.com/ios"><img src="https://img.shields.io/badge/platform-iOS%2010+-lightgray.svg"></a>
