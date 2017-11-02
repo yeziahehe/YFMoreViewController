@@ -52,6 +52,7 @@ public class YFMoreViewController: UIViewController {
     fileprivate var containerView: UIView = {
         let containerView = UIView.init()
         containerView.clipsToBounds = true
+        containerView.backgroundColor = UIColor.white
         return containerView
     }()
     
@@ -119,6 +120,10 @@ public class YFMoreViewController: UIViewController {
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
+        var iPhoneX: Bool {
+            return UIScreen.main.nativeBounds.height == 2436
+        }
+        
         maskView.frame = view.bounds
         
         var layoutOriginY: CGFloat = 0
@@ -182,7 +187,7 @@ public class YFMoreViewController: UIViewController {
         contentView.frame = CGRect(x: 0, y: 0, width: contentWidth, height: layoutOriginY)
         cancelButtonDividingLayer.frame = CGRect(x: 0, y: layoutOriginY, width: contentWidth, height: 1/UIScreen.main.scale)
         cancelButton.frame = CGRect(x: 0, y: cancelButtonDividingLayer.frame.minY, width: contentWidth, height: 50)
-        containerView.frame = CGRect(x: (view.bounds.width - contentWidth)/2, y: view.bounds.height - cancelButton.frame.maxY, width: contentWidth, height: cancelButton.frame.maxY)
+        containerView.frame = CGRect(x: (view.bounds.width - contentWidth)/2, y: iPhoneX ? view.bounds.height - cancelButton.frame.maxY - 20 : view.bounds.height - cancelButton.frame.maxY, width: contentWidth, height: iPhoneX ? cancelButton.frame.maxY + 20 : cancelButton.frame.maxY)
     }
 }
 
