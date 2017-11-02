@@ -27,7 +27,7 @@ public class YFMoreViewController: UIViewController {
     fileprivate var maskView: UIControl = {
         let maskView = UIControl.init()
         maskView.alpha = 0
-        maskView.backgroundColor = UIColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.35)
+        maskView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.35)
         maskView.addTarget(self, action: #selector(handleMaskControlEvent), for: .touchUpInside)
         return maskView
     }()
@@ -45,7 +45,7 @@ public class YFMoreViewController: UIViewController {
     fileprivate var contentView: UIView = {
         let contentView = UIView.init()
         contentView.clipsToBounds = true
-        contentView.backgroundColor = UIColor(colorLiteralRed: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+        contentView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
         return contentView
     }()
     
@@ -73,7 +73,7 @@ public class YFMoreViewController: UIViewController {
     fileprivate var scrollViewDividingLayer: CALayer = {
         let scrollViewDividingLayer = CALayer.init()
         scrollViewDividingLayer.isHidden = true
-        scrollViewDividingLayer.backgroundColor = UIColor(colorLiteralRed: 229/255, green: 229/255, blue: 229/255, alpha: 1).cgColor
+        scrollViewDividingLayer.backgroundColor = UIColor(red: 229/255, green: 229/255, blue: 229/255, alpha: 1).cgColor
         return scrollViewDividingLayer
     }()
     
@@ -82,8 +82,8 @@ public class YFMoreViewController: UIViewController {
         cancelButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         cancelButton.backgroundColor = UIColor.white
         cancelButton.setTitle("取消", for: .normal)
-        cancelButton.setTitleColor(UIColor(colorLiteralRed: 34/255, green: 34/255, blue: 34/255, alpha: 1), for: .normal)
-        cancelButton.setTitleColor(UIColor(colorLiteralRed: 34/255, green: 34/255, blue: 34/255, alpha: 0.5), for: .highlighted)
+        cancelButton.setTitleColor(UIColor(red: 34/255, green: 34/255, blue: 34/255, alpha: 1), for: .normal)
+        cancelButton.setTitleColor(UIColor(red: 34/255, green: 34/255, blue: 34/255, alpha: 0.5), for: .highlighted)
         cancelButton.addTarget(self, action: #selector(handleCancelButtonEvent), for: .touchUpInside)
         return cancelButton
     }()
