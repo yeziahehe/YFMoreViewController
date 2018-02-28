@@ -7,7 +7,7 @@
 <a href="https://github.com/yeziahehe/YFMoreViewController/blob/master/LICENSE"><img src="https://img.shields.io/badge/language-MIT-blue.svg"></a>
 <a href="http://swift.org"><img src="https://img.shields.io/badge/language-swift%204.0-orange.svg"></a>
 <a href="https://developer.apple.com/xcode/"><img src="https://img.shields.io/badge/xcode-8.0-46aae6.svg"></a>
-<a href="https://developer.apple.com/ios"><img src="https://img.shields.io/badge/platform-iOS%2010+-lightgray.svg"></a>
+<a href="https://developer.apple.com/ios"><img src="https://img.shields.io/badge/platform-iOS%209+-lightgray.svg"></a>
 </p>
 
 Swift 编写的更多操作 ViewController。
@@ -18,7 +18,7 @@ Swift 编写的更多操作 ViewController。
 
 # 要求
 
-- iOS 10 及以后 (我没有在 iOS 1O 以下系统 Run，如果你发现问题，请 Open an issue)
+- iOS 9.0 及以后
 - Xcode 9.x 及以后
 - Swift 4.x 及以后(Swift 3.x, 使用版本 1.0.2)
 

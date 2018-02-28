@@ -7,7 +7,7 @@
 <a href="https://github.com/yeziahehe/YFMoreViewController/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
 <a href="http://swift.org"><img src="https://img.shields.io/badge/language-swift%204.0-orange.svg"></a>
 <a href="https://developer.apple.com/xcode/"><img src="https://img.shields.io/badge/xcode-8.0-46aae6.svg"></a>
-<a href="https://developer.apple.com/ios"><img src="https://img.shields.io/badge/platform-iOS%2010+-lightgray.svg"></a>
+<a href="https://developer.apple.com/ios"><img src="https://img.shields.io/badge/platform-iOS%209+-lightgray.svg"></a>
 </p>
 
 Easy More Operation ViewController in swift.
@@ -20,7 +20,7 @@ More Operation like share and refresh, inspiration comes from Wechat More Operat
 
 # Requirements
 
-- iOS 10 and later (I did not run blow iOS 10, if you find some error, open an issue.)
+- iOS 9.0 and later
 - Xcode 9.x and later
 - Swift 4.x and later(For Swift 3.x, use version 1.0.2)
 
