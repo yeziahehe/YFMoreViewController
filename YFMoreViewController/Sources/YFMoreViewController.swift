@@ -135,7 +135,7 @@ public class YFMoreViewController: UIViewController {
         }
         
         let itemWidth: CGFloat = 72
-        let scrollViewInsets: UIEdgeInsets = UIEdgeInsetsMake(10, 9, 12, 9)
+        let scrollViewInsets: UIEdgeInsets = UIEdgeInsets(top: 10, left: 9, bottom: 12, right: 9)
         var itemMaxHeight: CGFloat = 0
         var itemMaxX: CGFloat = 0
         
